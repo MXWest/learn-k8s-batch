@@ -6,10 +6,10 @@ metadata:
 spec:
   template:
     spec:
-      restartPolicy: Never
-      terminationGracePeriodSeconds: 0
       containers:
         - name: my-job
           image: alpine
           imagePullPolicy: IfNotPresent
-          command: ['sh', '-c', 'echo First Batch Job; sleep 10']
+          command: ['sh', '-c', 'echo Second Batch Job; sleep 10']
+      restartPolicy: Never
+      terminationGracePeriodSeconds: 0
