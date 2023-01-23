@@ -1,0 +1,15 @@
+# save this a simple-job.yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: batch-job-example
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      terminationGracePeriodSeconds: 0
+      containers:
+        - name: my-job
+          image: alpine
+          imagePullPolicy: IfNotPresent
+          command: ['sh', '-c', 'echo First Batch Job; sleep 10']
