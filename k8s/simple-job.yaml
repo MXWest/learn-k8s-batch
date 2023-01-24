@@ -17,4 +17,4 @@ spec:
           command: ['sh', '-c', 'echo Fourth Batch Job; sleep 2']
       restartPolicy: Never
       terminationGracePeriodSeconds: 0
-  ttlSecondsAfterFinished: 120
+  ttlSecondsAfterFinished: 60
