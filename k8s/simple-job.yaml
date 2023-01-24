@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: my-job
-          image: alpine
+          image: busybox:1.35.0
           imagePullPolicy: IfNotPresent
           command: ['sh', '-c', 'echo Fifth Batch Job; sleep 20']
       restartPolicy: Never
