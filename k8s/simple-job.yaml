@@ -4,9 +4,6 @@ kind: Job
 
 metadata:
   name: batch-job-example
-  annotations:
-    argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
 spec:
   template:
     spec:
