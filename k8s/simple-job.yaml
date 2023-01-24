@@ -14,7 +14,7 @@ spec:
         - name: my-job
           image: alpine
           imagePullPolicy: IfNotPresent
-          command: ['sh', '-c', 'echo Fourth Batch Job; sleep 2']
+          command: ['sh', '-c', 'echo Fifth Batch Job; sleep 20']
       restartPolicy: Never
       terminationGracePeriodSeconds: 0
   ttlSecondsAfterFinished: 60
